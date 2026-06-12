@@ -20,16 +20,33 @@ class WorldPopulationChartTests(unittest.TestCase):
                 "id": "IND",
                 "name": "India",
                 "region": {"id": "SAS", "value": "South Asia"},
+                "latitude": "20.5937",
+                "longitude": "78.9629",
             },
         ]
 
         countries = load_country_metadata(records)
 
-        self.assertEqual(countries, {"IND": {"name": "India", "region": "South Asia"}})
+        self.assertEqual(
+            countries,
+            {
+                "IND": {
+                    "name": "India",
+                    "region": "South Asia",
+                    "latitude": 20.5937,
+                    "longitude": 78.9629,
+                }
+            },
+        )
 
     def test_latest_country_populations_filters_aggregates_and_uses_latest_value(self):
         countries = {
-            "IND": {"name": "India", "region": "South Asia"},
+            "IND": {
+                "name": "India",
+                "region": "South Asia",
+                "latitude": 20.5937,
+                "longitude": 78.9629,
+            },
             "USA": {"name": "United States", "region": "North America"},
         }
         records = [
@@ -45,6 +62,8 @@ class WorldPopulationChartTests(unittest.TestCase):
         self.assertEqual([item["iso3"] for item in populations], ["IND", "USA"])
         self.assertEqual(populations[0]["population"], 1_441_700_000)
         self.assertEqual(populations[0]["year"], 2024)
+        self.assertEqual(populations[0]["latitude"], 20.5937)
+        self.assertEqual(populations[0]["longitude"], 78.9629)
         self.assertEqual(populations[1]["population"], 341_800_000)
         self.assertEqual(populations[1]["year"], 2024)
 
@@ -79,6 +98,66 @@ class WorldPopulationChartTests(unittest.TestCase):
         self.assertIn("United States", html)
         self.assertIn("2026-06-12T03:42:00Z", html)
         self.assertIn("<table", html)
+
+    def test_build_chart_html_adds_interactive_controls_and_chart_targets(self):
+        populations = [
+            {
+                "iso3": "IND",
+                "country": "India",
+                "region": "South Asia",
+                "population": 1_441_700_000,
+                "year": 2024,
+                "latitude": 20.5937,
+                "longitude": 78.9629,
+            },
+            {
+                "iso3": "USA",
+                "country": "United States",
+                "region": "North America",
+                "population": 341_800_000,
+                "year": 2024,
+                "latitude": 37.0902,
+                "longitude": -95.7129,
+            },
+        ]
+
+        html = build_chart_html(populations)
+
+        for expected in [
+            'id="country-search"',
+            'id="region-filter"',
+            'id="top-count"',
+            'id="sort-mode"',
+            'id="population-data"',
+            'id="bar-chart"',
+            'id="region-chart"',
+            'id="bubble-map"',
+            'id="country-table-body"',
+            "function renderBarChart",
+            "function renderRegionChart",
+            "function renderBubbleMap",
+            "addEventListener",
+        ]:
+            self.assertIn(expected, html)
+
+        self.assertIn('"latitude": 20.5937', html)
+        self.assertIn("Search countries", html)
+        self.assertIn("function selectedSortLabel", html)
+
+    def test_build_chart_html_marks_configured_top_n_as_selected(self):
+        populations = [
+            {
+                "iso3": "IND",
+                "country": "India",
+                "region": "South Asia",
+                "population": 1_441_700_000,
+                "year": 2024,
+            },
+        ]
+
+        html = build_chart_html(populations, top_n=50)
+
+        self.assertIn('<option value="50" selected>Top 50</option>', html)
 
     def test_build_chart_html_defaults_to_deterministic_data_snapshot_label(self):
         populations = [
