@@ -1,0 +1,1521 @@
+[
+  {
+    "iso3": "IND",
+    "country": "India",
+    "region": "South Asia",
+    "population": 1450935791,
+    "year": 2024
+  },
+  {
+    "iso3": "CHN",
+    "country": "China",
+    "region": "East Asia & Pacific",
+    "population": 1408975000,
+    "year": 2024
+  },
+  {
+    "iso3": "USA",
+    "country": "United States",
+    "region": "North America",
+    "population": 340110988,
+    "year": 2024
+  },
+  {
+    "iso3": "IDN",
+    "country": "Indonesia",
+    "region": "East Asia & Pacific",
+    "population": 283487931,
+    "year": 2024
+  },
+  {
+    "iso3": "PAK",
+    "country": "Pakistan",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 251269164,
+    "year": 2024
+  },
+  {
+    "iso3": "NGA",
+    "country": "Nigeria",
+    "region": "Sub-Saharan Africa ",
+    "population": 232679478,
+    "year": 2024
+  },
+  {
+    "iso3": "BRA",
+    "country": "Brazil",
+    "region": "Latin America & Caribbean ",
+    "population": 211998573,
+    "year": 2024
+  },
+  {
+    "iso3": "BGD",
+    "country": "Bangladesh",
+    "region": "South Asia",
+    "population": 173562364,
+    "year": 2024
+  },
+  {
+    "iso3": "RUS",
+    "country": "Russian Federation",
+    "region": "Europe & Central Asia",
+    "population": 143533851,
+    "year": 2024
+  },
+  {
+    "iso3": "ETH",
+    "country": "Ethiopia",
+    "region": "Sub-Saharan Africa ",
+    "population": 132059767,
+    "year": 2024
+  },
+  {
+    "iso3": "MEX",
+    "country": "Mexico",
+    "region": "Latin America & Caribbean ",
+    "population": 130861007,
+    "year": 2024
+  },
+  {
+    "iso3": "JPN",
+    "country": "Japan",
+    "region": "East Asia & Pacific",
+    "population": 123975371,
+    "year": 2024
+  },
+  {
+    "iso3": "EGY",
+    "country": "Egypt, Arab Rep.",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 116538258,
+    "year": 2024
+  },
+  {
+    "iso3": "PHL",
+    "country": "Philippines",
+    "region": "East Asia & Pacific",
+    "population": 115843670,
+    "year": 2024
+  },
+  {
+    "iso3": "COD",
+    "country": "Congo, Dem. Rep.",
+    "region": "Sub-Saharan Africa ",
+    "population": 109276265,
+    "year": 2024
+  },
+  {
+    "iso3": "VNM",
+    "country": "Viet Nam",
+    "region": "East Asia & Pacific",
+    "population": 100987686,
+    "year": 2024
+  },
+  {
+    "iso3": "IRN",
+    "country": "Iran, Islamic Rep.",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 91567738,
+    "year": 2024
+  },
+  {
+    "iso3": "TUR",
+    "country": "Turkiye",
+    "region": "Europe & Central Asia",
+    "population": 85518661,
+    "year": 2024
+  },
+  {
+    "iso3": "DEU",
+    "country": "Germany",
+    "region": "Europe & Central Asia",
+    "population": 83516593,
+    "year": 2024
+  },
+  {
+    "iso3": "THA",
+    "country": "Thailand",
+    "region": "East Asia & Pacific",
+    "population": 71668011,
+    "year": 2024
+  },
+  {
+    "iso3": "GBR",
+    "country": "United Kingdom",
+    "region": "Europe & Central Asia",
+    "population": 69226000,
+    "year": 2024
+  },
+  {
+    "iso3": "TZA",
+    "country": "Tanzania",
+    "region": "Sub-Saharan Africa ",
+    "population": 68560157,
+    "year": 2024
+  },
+  {
+    "iso3": "FRA",
+    "country": "France",
+    "region": "Europe & Central Asia",
+    "population": 68551653,
+    "year": 2024
+  },
+  {
+    "iso3": "ZAF",
+    "country": "South Africa",
+    "region": "Sub-Saharan Africa ",
+    "population": 64007187,
+    "year": 2024
+  },
+  {
+    "iso3": "ITA",
+    "country": "Italy",
+    "region": "Europe & Central Asia",
+    "population": 58952704,
+    "year": 2024
+  },
+  {
+    "iso3": "KEN",
+    "country": "Kenya",
+    "region": "Sub-Saharan Africa ",
+    "population": 56432944,
+    "year": 2024
+  },
+  {
+    "iso3": "MMR",
+    "country": "Myanmar",
+    "region": "East Asia & Pacific",
+    "population": 54500091,
+    "year": 2024
+  },
+  {
+    "iso3": "COL",
+    "country": "Colombia",
+    "region": "Latin America & Caribbean ",
+    "population": 52886363,
+    "year": 2024
+  },
+  {
+    "iso3": "KOR",
+    "country": "Korea, Rep.",
+    "region": "East Asia & Pacific",
+    "population": 51751065,
+    "year": 2024
+  },
+  {
+    "iso3": "SDN",
+    "country": "Sudan",
+    "region": "Sub-Saharan Africa ",
+    "population": 50448963,
+    "year": 2024
+  },
+  {
+    "iso3": "UGA",
+    "country": "Uganda",
+    "region": "Sub-Saharan Africa ",
+    "population": 50015092,
+    "year": 2024
+  },
+  {
+    "iso3": "ESP",
+    "country": "Spain",
+    "region": "Europe & Central Asia",
+    "population": 48848840,
+    "year": 2024
+  },
+  {
+    "iso3": "DZA",
+    "country": "Algeria",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 46814308,
+    "year": 2024
+  },
+  {
+    "iso3": "IRQ",
+    "country": "Iraq",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 46042015,
+    "year": 2024
+  },
+  {
+    "iso3": "ARG",
+    "country": "Argentina",
+    "region": "Latin America & Caribbean ",
+    "population": 45696159,
+    "year": 2024
+  },
+  {
+    "iso3": "AFG",
+    "country": "Afghanistan",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 42647492,
+    "year": 2024
+  },
+  {
+    "iso3": "CAN",
+    "country": "Canada",
+    "region": "North America",
+    "population": 41288599,
+    "year": 2024
+  },
+  {
+    "iso3": "YEM",
+    "country": "Yemen, Rep.",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 40583164,
+    "year": 2024
+  },
+  {
+    "iso3": "MAR",
+    "country": "Morocco",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 38081173,
+    "year": 2024
+  },
+  {
+    "iso3": "AGO",
+    "country": "Angola",
+    "region": "Sub-Saharan Africa ",
+    "population": 37885849,
+    "year": 2024
+  },
+  {
+    "iso3": "UKR",
+    "country": "Ukraine",
+    "region": "Europe & Central Asia",
+    "population": 37860221,
+    "year": 2024
+  },
+  {
+    "iso3": "POL",
+    "country": "Poland",
+    "region": "Europe & Central Asia",
+    "population": 36559233,
+    "year": 2024
+  },
+  {
+    "iso3": "UZB",
+    "country": "Uzbekistan",
+    "region": "Europe & Central Asia",
+    "population": 36361859,
+    "year": 2024
+  },
+  {
+    "iso3": "MYS",
+    "country": "Malaysia",
+    "region": "East Asia & Pacific",
+    "population": 35557673,
+    "year": 2024
+  },
+  {
+    "iso3": "SAU",
+    "country": "Saudi Arabia",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 35300280,
+    "year": 2024
+  },
+  {
+    "iso3": "MOZ",
+    "country": "Mozambique",
+    "region": "Sub-Saharan Africa ",
+    "population": 34631766,
+    "year": 2024
+  },
+  {
+    "iso3": "GHA",
+    "country": "Ghana",
+    "region": "Sub-Saharan Africa ",
+    "population": 34427414,
+    "year": 2024
+  },
+  {
+    "iso3": "PER",
+    "country": "Peru",
+    "region": "Latin America & Caribbean ",
+    "population": 34217848,
+    "year": 2024
+  },
+  {
+    "iso3": "MDG",
+    "country": "Madagascar",
+    "region": "Sub-Saharan Africa ",
+    "population": 31964956,
+    "year": 2024
+  },
+  {
+    "iso3": "CIV",
+    "country": "Cote d'Ivoire",
+    "region": "Sub-Saharan Africa ",
+    "population": 31934230,
+    "year": 2024
+  },
+  {
+    "iso3": "NPL",
+    "country": "Nepal",
+    "region": "South Asia",
+    "population": 29651054,
+    "year": 2024
+  },
+  {
+    "iso3": "CMR",
+    "country": "Cameroon",
+    "region": "Sub-Saharan Africa ",
+    "population": 29123744,
+    "year": 2024
+  },
+  {
+    "iso3": "VEN",
+    "country": "Venezuela, RB",
+    "region": "Latin America & Caribbean ",
+    "population": 28405543,
+    "year": 2024
+  },
+  {
+    "iso3": "AUS",
+    "country": "Australia",
+    "region": "East Asia & Pacific",
+    "population": 27196812,
+    "year": 2024
+  },
+  {
+    "iso3": "NER",
+    "country": "Niger",
+    "region": "Sub-Saharan Africa ",
+    "population": 27032412,
+    "year": 2024
+  },
+  {
+    "iso3": "PRK",
+    "country": "Korea, Dem. People's Rep.",
+    "region": "East Asia & Pacific",
+    "population": 26498823,
+    "year": 2024
+  },
+  {
+    "iso3": "SYR",
+    "country": "Syrian Arab Republic",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 24672760,
+    "year": 2024
+  },
+  {
+    "iso3": "MLI",
+    "country": "Mali",
+    "region": "Sub-Saharan Africa ",
+    "population": 24478595,
+    "year": 2024
+  },
+  {
+    "iso3": "BFA",
+    "country": "Burkina Faso",
+    "region": "Sub-Saharan Africa ",
+    "population": 23548781,
+    "year": 2024
+  },
+  {
+    "iso3": "LKA",
+    "country": "Sri Lanka",
+    "region": "South Asia",
+    "population": 21916000,
+    "year": 2024
+  },
+  {
+    "iso3": "MWI",
+    "country": "Malawi",
+    "region": "Sub-Saharan Africa ",
+    "population": 21655286,
+    "year": 2024
+  },
+  {
+    "iso3": "ZMB",
+    "country": "Zambia",
+    "region": "Sub-Saharan Africa ",
+    "population": 21314956,
+    "year": 2024
+  },
+  {
+    "iso3": "KAZ",
+    "country": "Kazakhstan",
+    "region": "Europe & Central Asia",
+    "population": 20592571,
+    "year": 2024
+  },
+  {
+    "iso3": "TCD",
+    "country": "Chad",
+    "region": "Sub-Saharan Africa ",
+    "population": 20299123,
+    "year": 2024
+  },
+  {
+    "iso3": "CHL",
+    "country": "Chile",
+    "region": "Latin America & Caribbean ",
+    "population": 19764771,
+    "year": 2024
+  },
+  {
+    "iso3": "ROU",
+    "country": "Romania",
+    "region": "Europe & Central Asia",
+    "population": 19051804,
+    "year": 2024
+  },
+  {
+    "iso3": "SOM",
+    "country": "Somalia, Fed. Rep.",
+    "region": "Sub-Saharan Africa ",
+    "population": 19009151,
+    "year": 2024
+  },
+  {
+    "iso3": "SEN",
+    "country": "Senegal",
+    "region": "Sub-Saharan Africa ",
+    "population": 18501984,
+    "year": 2024
+  },
+  {
+    "iso3": "GTM",
+    "country": "Guatemala",
+    "region": "Latin America & Caribbean ",
+    "population": 18406359,
+    "year": 2024
+  },
+  {
+    "iso3": "ECU",
+    "country": "Ecuador",
+    "region": "Latin America & Caribbean ",
+    "population": 18135478,
+    "year": 2024
+  },
+  {
+    "iso3": "NLD",
+    "country": "Netherlands",
+    "region": "Europe & Central Asia",
+    "population": 17993485,
+    "year": 2024
+  },
+  {
+    "iso3": "KHM",
+    "country": "Cambodia",
+    "region": "East Asia & Pacific",
+    "population": 17638801,
+    "year": 2024
+  },
+  {
+    "iso3": "ZWE",
+    "country": "Zimbabwe",
+    "region": "Sub-Saharan Africa ",
+    "population": 16634373,
+    "year": 2024
+  },
+  {
+    "iso3": "GIN",
+    "country": "Guinea",
+    "region": "Sub-Saharan Africa ",
+    "population": 14754785,
+    "year": 2024
+  },
+  {
+    "iso3": "BEN",
+    "country": "Benin",
+    "region": "Sub-Saharan Africa ",
+    "population": 14462724,
+    "year": 2024
+  },
+  {
+    "iso3": "RWA",
+    "country": "Rwanda",
+    "region": "Sub-Saharan Africa ",
+    "population": 14256567,
+    "year": 2024
+  },
+  {
+    "iso3": "BDI",
+    "country": "Burundi",
+    "region": "Sub-Saharan Africa ",
+    "population": 14047786,
+    "year": 2024
+  },
+  {
+    "iso3": "BOL",
+    "country": "Bolivia",
+    "region": "Latin America & Caribbean ",
+    "population": 12413315,
+    "year": 2024
+  },
+  {
+    "iso3": "TUN",
+    "country": "Tunisia",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 12277109,
+    "year": 2024
+  },
+  {
+    "iso3": "SSD",
+    "country": "South Sudan",
+    "region": "Sub-Saharan Africa ",
+    "population": 11943408,
+    "year": 2024
+  },
+  {
+    "iso3": "BEL",
+    "country": "Belgium",
+    "region": "Europe & Central Asia",
+    "population": 11858610,
+    "year": 2024
+  },
+  {
+    "iso3": "HTI",
+    "country": "Haiti",
+    "region": "Latin America & Caribbean ",
+    "population": 11772557,
+    "year": 2024
+  },
+  {
+    "iso3": "JOR",
+    "country": "Jordan",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 11552876,
+    "year": 2024
+  },
+  {
+    "iso3": "DOM",
+    "country": "Dominican Republic",
+    "region": "Latin America & Caribbean ",
+    "population": 11427557,
+    "year": 2024
+  },
+  {
+    "iso3": "ARE",
+    "country": "United Arab Emirates",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 10986400,
+    "year": 2024
+  },
+  {
+    "iso3": "CUB",
+    "country": "Cuba",
+    "region": "Latin America & Caribbean ",
+    "population": 10979783,
+    "year": 2024
+  },
+  {
+    "iso3": "CZE",
+    "country": "Czechia",
+    "region": "Europe & Central Asia",
+    "population": 10905028,
+    "year": 2024
+  },
+  {
+    "iso3": "HND",
+    "country": "Honduras",
+    "region": "Latin America & Caribbean ",
+    "population": 10825703,
+    "year": 2024
+  },
+  {
+    "iso3": "PRT",
+    "country": "Portugal",
+    "region": "Europe & Central Asia",
+    "population": 10694681,
+    "year": 2024
+  },
+  {
+    "iso3": "TJK",
+    "country": "Tajikistan",
+    "region": "Europe & Central Asia",
+    "population": 10590927,
+    "year": 2024
+  },
+  {
+    "iso3": "PNG",
+    "country": "Papua New Guinea",
+    "region": "East Asia & Pacific",
+    "population": 10576502,
+    "year": 2024
+  },
+  {
+    "iso3": "SWE",
+    "country": "Sweden",
+    "region": "Europe & Central Asia",
+    "population": 10569709,
+    "year": 2024
+  },
+  {
+    "iso3": "GRC",
+    "country": "Greece",
+    "region": "Europe & Central Asia",
+    "population": 10405134,
+    "year": 2024
+  },
+  {
+    "iso3": "AZE",
+    "country": "Azerbaijan",
+    "region": "Europe & Central Asia",
+    "population": 10202830,
+    "year": 2024
+  },
+  {
+    "iso3": "ISR",
+    "country": "Israel",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 9974400,
+    "year": 2024
+  },
+  {
+    "iso3": "HUN",
+    "country": "Hungary",
+    "region": "Europe & Central Asia",
+    "population": 9562065,
+    "year": 2024
+  },
+  {
+    "iso3": "TGO",
+    "country": "Togo",
+    "region": "Sub-Saharan Africa ",
+    "population": 9515236,
+    "year": 2024
+  },
+  {
+    "iso3": "AUT",
+    "country": "Austria",
+    "region": "Europe & Central Asia",
+    "population": 9177982,
+    "year": 2024
+  },
+  {
+    "iso3": "BLR",
+    "country": "Belarus",
+    "region": "Europe & Central Asia",
+    "population": 9132629,
+    "year": 2024
+  },
+  {
+    "iso3": "CHE",
+    "country": "Switzerland",
+    "region": "Europe & Central Asia",
+    "population": 9005582,
+    "year": 2024
+  },
+  {
+    "iso3": "SLE",
+    "country": "Sierra Leone",
+    "region": "Sub-Saharan Africa ",
+    "population": 8642022,
+    "year": 2024
+  },
+  {
+    "iso3": "LAO",
+    "country": "Lao PDR",
+    "region": "East Asia & Pacific",
+    "population": 7769819,
+    "year": 2024
+  },
+  {
+    "iso3": "HKG",
+    "country": "Hong Kong SAR, China",
+    "region": "East Asia & Pacific",
+    "population": 7524100,
+    "year": 2024
+  },
+  {
+    "iso3": "TKM",
+    "country": "Turkmenistan",
+    "region": "Europe & Central Asia",
+    "population": 7494498,
+    "year": 2024
+  },
+  {
+    "iso3": "LBY",
+    "country": "Libya",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 7381023,
+    "year": 2024
+  },
+  {
+    "iso3": "KGZ",
+    "country": "Kyrgyz Republic",
+    "region": "Europe & Central Asia",
+    "population": 7221868,
+    "year": 2024
+  },
+  {
+    "iso3": "PRY",
+    "country": "Paraguay",
+    "region": "Latin America & Caribbean ",
+    "population": 6929153,
+    "year": 2024
+  },
+  {
+    "iso3": "NIC",
+    "country": "Nicaragua",
+    "region": "Latin America & Caribbean ",
+    "population": 6916140,
+    "year": 2024
+  },
+  {
+    "iso3": "SRB",
+    "country": "Serbia",
+    "region": "Europe & Central Asia",
+    "population": 6586476,
+    "year": 2024
+  },
+  {
+    "iso3": "BGR",
+    "country": "Bulgaria",
+    "region": "Europe & Central Asia",
+    "population": 6441421,
+    "year": 2024
+  },
+  {
+    "iso3": "SLV",
+    "country": "El Salvador",
+    "region": "Latin America & Caribbean ",
+    "population": 6338193,
+    "year": 2024
+  },
+  {
+    "iso3": "COG",
+    "country": "Congo, Rep.",
+    "region": "Sub-Saharan Africa ",
+    "population": 6332961,
+    "year": 2024
+  },
+  {
+    "iso3": "SGP",
+    "country": "Singapore",
+    "region": "East Asia & Pacific",
+    "population": 6036860,
+    "year": 2024
+  },
+  {
+    "iso3": "DNK",
+    "country": "Denmark",
+    "region": "Europe & Central Asia",
+    "population": 5976992,
+    "year": 2024
+  },
+  {
+    "iso3": "LBN",
+    "country": "Lebanon",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 5805962,
+    "year": 2024
+  },
+  {
+    "iso3": "FIN",
+    "country": "Finland",
+    "region": "Europe & Central Asia",
+    "population": 5619911,
+    "year": 2024
+  },
+  {
+    "iso3": "LBR",
+    "country": "Liberia",
+    "region": "Sub-Saharan Africa ",
+    "population": 5612817,
+    "year": 2024
+  },
+  {
+    "iso3": "NOR",
+    "country": "Norway",
+    "region": "Europe & Central Asia",
+    "population": 5572279,
+    "year": 2024
+  },
+  {
+    "iso3": "SVK",
+    "country": "Slovak Republic",
+    "region": "Europe & Central Asia",
+    "population": 5422069,
+    "year": 2024
+  },
+  {
+    "iso3": "IRL",
+    "country": "Ireland",
+    "region": "Europe & Central Asia",
+    "population": 5395790,
+    "year": 2024
+  },
+  {
+    "iso3": "CAF",
+    "country": "Central African Republic",
+    "region": "Sub-Saharan Africa ",
+    "population": 5330690,
+    "year": 2024
+  },
+  {
+    "iso3": "PSE",
+    "country": "West Bank and Gaza",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 5289152,
+    "year": 2024
+  },
+  {
+    "iso3": "NZL",
+    "country": "New Zealand",
+    "region": "East Asia & Pacific",
+    "population": 5287500,
+    "year": 2024
+  },
+  {
+    "iso3": "OMN",
+    "country": "Oman",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 5281538,
+    "year": 2024
+  },
+  {
+    "iso3": "MRT",
+    "country": "Mauritania",
+    "region": "Sub-Saharan Africa ",
+    "population": 5169395,
+    "year": 2024
+  },
+  {
+    "iso3": "CRI",
+    "country": "Costa Rica",
+    "region": "Latin America & Caribbean ",
+    "population": 5129910,
+    "year": 2024
+  },
+  {
+    "iso3": "KWT",
+    "country": "Kuwait",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 4897263,
+    "year": 2024
+  },
+  {
+    "iso3": "PAN",
+    "country": "Panama",
+    "region": "Latin America & Caribbean ",
+    "population": 4515577,
+    "year": 2024
+  },
+  {
+    "iso3": "HRV",
+    "country": "Croatia",
+    "region": "Europe & Central Asia",
+    "population": 3866200,
+    "year": 2024
+  },
+  {
+    "iso3": "GEO",
+    "country": "Georgia",
+    "region": "Europe & Central Asia",
+    "population": 3699557,
+    "year": 2024
+  },
+  {
+    "iso3": "ERI",
+    "country": "Eritrea",
+    "region": "Sub-Saharan Africa ",
+    "population": 3535603,
+    "year": 2024
+  },
+  {
+    "iso3": "MNG",
+    "country": "Mongolia",
+    "region": "East Asia & Pacific",
+    "population": 3524788,
+    "year": 2024
+  },
+  {
+    "iso3": "URY",
+    "country": "Uruguay",
+    "region": "Latin America & Caribbean ",
+    "population": 3386588,
+    "year": 2024
+  },
+  {
+    "iso3": "PRI",
+    "country": "Puerto Rico (US)",
+    "region": "Latin America & Caribbean ",
+    "population": 3203295,
+    "year": 2024
+  },
+  {
+    "iso3": "BIH",
+    "country": "Bosnia and Herzegovina",
+    "region": "Europe & Central Asia",
+    "population": 3164253,
+    "year": 2024
+  },
+  {
+    "iso3": "ARM",
+    "country": "Armenia",
+    "region": "Europe & Central Asia",
+    "population": 3033500,
+    "year": 2024
+  },
+  {
+    "iso3": "NAM",
+    "country": "Namibia",
+    "region": "Sub-Saharan Africa ",
+    "population": 3030131,
+    "year": 2024
+  },
+  {
+    "iso3": "LTU",
+    "country": "Lithuania",
+    "region": "Europe & Central Asia",
+    "population": 2888278,
+    "year": 2024
+  },
+  {
+    "iso3": "QAT",
+    "country": "Qatar",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 2857822,
+    "year": 2024
+  },
+  {
+    "iso3": "JAM",
+    "country": "Jamaica",
+    "region": "Latin America & Caribbean ",
+    "population": 2839175,
+    "year": 2024
+  },
+  {
+    "iso3": "GMB",
+    "country": "Gambia, The",
+    "region": "Sub-Saharan Africa ",
+    "population": 2759988,
+    "year": 2024
+  },
+  {
+    "iso3": "GAB",
+    "country": "Gabon",
+    "region": "Sub-Saharan Africa ",
+    "population": 2538952,
+    "year": 2024
+  },
+  {
+    "iso3": "BWA",
+    "country": "Botswana",
+    "region": "Sub-Saharan Africa ",
+    "population": 2521139,
+    "year": 2024
+  },
+  {
+    "iso3": "MDA",
+    "country": "Moldova",
+    "region": "Europe & Central Asia",
+    "population": 2402306,
+    "year": 2024
+  },
+  {
+    "iso3": "ALB",
+    "country": "Albania",
+    "region": "Europe & Central Asia",
+    "population": 2377128,
+    "year": 2024
+  },
+  {
+    "iso3": "LSO",
+    "country": "Lesotho",
+    "region": "Sub-Saharan Africa ",
+    "population": 2337423,
+    "year": 2024
+  },
+  {
+    "iso3": "GNB",
+    "country": "Guinea-Bissau",
+    "region": "Sub-Saharan Africa ",
+    "population": 2201352,
+    "year": 2024
+  },
+  {
+    "iso3": "SVN",
+    "country": "Slovenia",
+    "region": "Europe & Central Asia",
+    "population": 2127400,
+    "year": 2024
+  },
+  {
+    "iso3": "GNQ",
+    "country": "Equatorial Guinea",
+    "region": "Sub-Saharan Africa ",
+    "population": 1892516,
+    "year": 2024
+  },
+  {
+    "iso3": "LVA",
+    "country": "Latvia",
+    "region": "Europe & Central Asia",
+    "population": 1866124,
+    "year": 2024
+  },
+  {
+    "iso3": "MKD",
+    "country": "North Macedonia",
+    "region": "Europe & Central Asia",
+    "population": 1824359,
+    "year": 2024
+  },
+  {
+    "iso3": "XKX",
+    "country": "Kosovo",
+    "region": "Europe & Central Asia",
+    "population": 1594353,
+    "year": 2024
+  },
+  {
+    "iso3": "BHR",
+    "country": "Bahrain",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 1588670,
+    "year": 2024
+  },
+  {
+    "iso3": "TLS",
+    "country": "Timor-Leste",
+    "region": "East Asia & Pacific",
+    "population": 1400638,
+    "year": 2024
+  },
+  {
+    "iso3": "EST",
+    "country": "Estonia",
+    "region": "Europe & Central Asia",
+    "population": 1372341,
+    "year": 2024
+  },
+  {
+    "iso3": "TTO",
+    "country": "Trinidad and Tobago",
+    "region": "Latin America & Caribbean ",
+    "population": 1368333,
+    "year": 2024
+  },
+  {
+    "iso3": "CYP",
+    "country": "Cyprus",
+    "region": "Europe & Central Asia",
+    "population": 1358282,
+    "year": 2024
+  },
+  {
+    "iso3": "MUS",
+    "country": "Mauritius",
+    "region": "Sub-Saharan Africa ",
+    "population": 1245779,
+    "year": 2024
+  },
+  {
+    "iso3": "SWZ",
+    "country": "Eswatini",
+    "region": "Sub-Saharan Africa ",
+    "population": 1242822,
+    "year": 2024
+  },
+  {
+    "iso3": "DJI",
+    "country": "Djibouti",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 1168722,
+    "year": 2024
+  },
+  {
+    "iso3": "FJI",
+    "country": "Fiji",
+    "region": "East Asia & Pacific",
+    "population": 928784,
+    "year": 2024
+  },
+  {
+    "iso3": "COM",
+    "country": "Comoros",
+    "region": "Sub-Saharan Africa ",
+    "population": 866628,
+    "year": 2024
+  },
+  {
+    "iso3": "GUY",
+    "country": "Guyana",
+    "region": "Latin America & Caribbean ",
+    "population": 831087,
+    "year": 2024
+  },
+  {
+    "iso3": "SLB",
+    "country": "Solomon Islands",
+    "region": "East Asia & Pacific",
+    "population": 819198,
+    "year": 2024
+  },
+  {
+    "iso3": "BTN",
+    "country": "Bhutan",
+    "region": "South Asia",
+    "population": 791524,
+    "year": 2024
+  },
+  {
+    "iso3": "MAC",
+    "country": "Macao SAR, China",
+    "region": "East Asia & Pacific",
+    "population": 687000,
+    "year": 2024
+  },
+  {
+    "iso3": "LUX",
+    "country": "Luxembourg",
+    "region": "Europe & Central Asia",
+    "population": 677012,
+    "year": 2024
+  },
+  {
+    "iso3": "SUR",
+    "country": "Suriname",
+    "region": "Latin America & Caribbean ",
+    "population": 634431,
+    "year": 2024
+  },
+  {
+    "iso3": "MNE",
+    "country": "Montenegro",
+    "region": "Europe & Central Asia",
+    "population": 623525,
+    "year": 2024
+  },
+  {
+    "iso3": "MLT",
+    "country": "Malta",
+    "region": "Middle East, North Africa, Afghanistan & Pakistan",
+    "population": 568847,
+    "year": 2024
+  },
+  {
+    "iso3": "MDV",
+    "country": "Maldives",
+    "region": "South Asia",
+    "population": 527799,
+    "year": 2024
+  },
+  {
+    "iso3": "CPV",
+    "country": "Cabo Verde",
+    "region": "Sub-Saharan Africa ",
+    "population": 524877,
+    "year": 2024
+  },
+  {
+    "iso3": "BRN",
+    "country": "Brunei Darussalam",
+    "region": "East Asia & Pacific",
+    "population": 462721,
+    "year": 2024
+  },
+  {
+    "iso3": "BLZ",
+    "country": "Belize",
+    "region": "Latin America & Caribbean ",
+    "population": 417072,
+    "year": 2024
+  },
+  {
+    "iso3": "BHS",
+    "country": "Bahamas, The",
+    "region": "Latin America & Caribbean ",
+    "population": 401283,
+    "year": 2024
+  },
+  {
+    "iso3": "ISL",
+    "country": "Iceland",
+    "region": "Europe & Central Asia",
+    "population": 386506,
+    "year": 2024
+  },
+  {
+    "iso3": "VUT",
+    "country": "Vanuatu",
+    "region": "East Asia & Pacific",
+    "population": 327777,
+    "year": 2024
+  },
+  {
+    "iso3": "NCL",
+    "country": "New Caledonia",
+    "region": "East Asia & Pacific",
+    "population": 292639,
+    "year": 2024
+  },
+  {
+    "iso3": "BRB",
+    "country": "Barbados",
+    "region": "Latin America & Caribbean ",
+    "population": 282467,
+    "year": 2024
+  },
+  {
+    "iso3": "PYF",
+    "country": "French Polynesia",
+    "region": "East Asia & Pacific",
+    "population": 281807,
+    "year": 2024
+  },
+  {
+    "iso3": "STP",
+    "country": "Sao Tome and Principe",
+    "region": "Sub-Saharan Africa ",
+    "population": 235536,
+    "year": 2024
+  },
+  {
+    "iso3": "WSM",
+    "country": "Samoa",
+    "region": "East Asia & Pacific",
+    "population": 218019,
+    "year": 2024
+  },
+  {
+    "iso3": "LCA",
+    "country": "St. Lucia",
+    "region": "Latin America & Caribbean ",
+    "population": 179744,
+    "year": 2024
+  },
+  {
+    "iso3": "CHI",
+    "country": "Channel Islands",
+    "region": "Europe & Central Asia",
+    "population": 168126,
+    "year": 2024
+  },
+  {
+    "iso3": "GUM",
+    "country": "Guam",
+    "region": "East Asia & Pacific",
+    "population": 167777,
+    "year": 2024
+  },
+  {
+    "iso3": "CUW",
+    "country": "Curacao",
+    "region": "Latin America & Caribbean ",
+    "population": 155967,
+    "year": 2024
+  },
+  {
+    "iso3": "KIR",
+    "country": "Kiribati",
+    "region": "East Asia & Pacific",
+    "population": 134518,
+    "year": 2024
+  },
+  {
+    "iso3": "SYC",
+    "country": "Seychelles",
+    "region": "Sub-Saharan Africa ",
+    "population": 121354,
+    "year": 2024
+  },
+  {
+    "iso3": "GRD",
+    "country": "Grenada",
+    "region": "Latin America & Caribbean ",
+    "population": 117207,
+    "year": 2024
+  },
+  {
+    "iso3": "FSM",
+    "country": "Micronesia, Fed. Sts.",
+    "region": "East Asia & Pacific",
+    "population": 113160,
+    "year": 2024
+  },
+  {
+    "iso3": "ABW",
+    "country": "Aruba",
+    "region": "Latin America & Caribbean ",
+    "population": 107995,
+    "year": 2024
+  },
+  {
+    "iso3": "VIR",
+    "country": "Virgin Islands (U.S.)",
+    "region": "Latin America & Caribbean ",
+    "population": 104377,
+    "year": 2024
+  },
+  {
+    "iso3": "TON",
+    "country": "Tonga",
+    "region": "East Asia & Pacific",
+    "population": 104175,
+    "year": 2024
+  },
+  {
+    "iso3": "VCT",
+    "country": "St. Vincent and the Grenadines",
+    "region": "Latin America & Caribbean ",
+    "population": 100616,
+    "year": 2024
+  },
+  {
+    "iso3": "ATG",
+    "country": "Antigua and Barbuda",
+    "region": "Latin America & Caribbean ",
+    "population": 93772,
+    "year": 2024
+  },
+  {
+    "iso3": "IMN",
+    "country": "Isle of Man",
+    "region": "Europe & Central Asia",
+    "population": 84160,
+    "year": 2024
+  },
+  {
+    "iso3": "AND",
+    "country": "Andorra",
+    "region": "Europe & Central Asia",
+    "population": 81938,
+    "year": 2024
+  },
+  {
+    "iso3": "CYM",
+    "country": "Cayman Islands",
+    "region": "Latin America & Caribbean ",
+    "population": 74457,
+    "year": 2024
+  },
+  {
+    "iso3": "DMA",
+    "country": "Dominica",
+    "region": "Latin America & Caribbean ",
+    "population": 66205,
+    "year": 2024
+  },
+  {
+    "iso3": "BMU",
+    "country": "Bermuda",
+    "region": "North America",
+    "population": 64636,
+    "year": 2024
+  },
+  {
+    "iso3": "GRL",
+    "country": "Greenland",
+    "region": "Europe & Central Asia",
+    "population": 56836,
+    "year": 2024
+  },
+  {
+    "iso3": "FRO",
+    "country": "Faroe Islands",
+    "region": "Europe & Central Asia",
+    "population": 54681,
+    "year": 2024
+  },
+  {
+    "iso3": "KNA",
+    "country": "St. Kitts and Nevis",
+    "region": "Latin America & Caribbean ",
+    "population": 46843,
+    "year": 2024
+  },
+  {
+    "iso3": "ASM",
+    "country": "American Samoa",
+    "region": "East Asia & Pacific",
+    "population": 46765,
+    "year": 2024
+  },
+  {
+    "iso3": "TCA",
+    "country": "Turks and Caicos Islands",
+    "region": "Latin America & Caribbean ",
+    "population": 46535,
+    "year": 2024
+  },
+  {
+    "iso3": "MNP",
+    "country": "Northern Mariana Islands",
+    "region": "East Asia & Pacific",
+    "population": 44278,
+    "year": 2024
+  },
+  {
+    "iso3": "SXM",
+    "country": "Sint Maarten (Dutch part)",
+    "region": "Latin America & Caribbean ",
+    "population": 43350,
+    "year": 2024
+  },
+  {
+    "iso3": "LIE",
+    "country": "Liechtenstein",
+    "region": "Europe & Central Asia",
+    "population": 40450,
+    "year": 2024
+  },
+  {
+    "iso3": "VGB",
+    "country": "British Virgin Islands",
+    "region": "Latin America & Caribbean ",
+    "population": 39471,
+    "year": 2024
+  },
+  {
+    "iso3": "GIB",
+    "country": "Gibraltar",
+    "region": "Europe & Central Asia",
+    "population": 39329,
+    "year": 2024
+  },
+  {
+    "iso3": "MCO",
+    "country": "Monaco",
+    "region": "Europe & Central Asia",
+    "population": 38631,
+    "year": 2024
+  },
+  {
+    "iso3": "MHL",
+    "country": "Marshall Islands",
+    "region": "East Asia & Pacific",
+    "population": 37548,
+    "year": 2024
+  },
+  {
+    "iso3": "SMR",
+    "country": "San Marino",
+    "region": "Europe & Central Asia",
+    "population": 33977,
+    "year": 2024
+  },
+  {
+    "iso3": "MAF",
+    "country": "St. Martin (French part)",
+    "region": "Latin America & Caribbean ",
+    "population": 26129,
+    "year": 2024
+  },
+  {
+    "iso3": "PLW",
+    "country": "Palau",
+    "region": "East Asia & Pacific",
+    "population": 17695,
+    "year": 2024
+  },
+  {
+    "iso3": "NRU",
+    "country": "Nauru",
+    "region": "East Asia & Pacific",
+    "population": 11947,
+    "year": 2024
+  },
+  {
+    "iso3": "TUV",
+    "country": "Tuvalu",
+    "region": "East Asia & Pacific",
+    "population": 9646,
+    "year": 2024
+  }
+]

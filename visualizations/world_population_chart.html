@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>World Country Population Totals</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --ink: #172033;
+      --muted: #64748b;
+      --accent: #2563eb;
+      --accent-soft: #dbeafe;
+      --grid: #e2e8f0;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    .hero, .card {
+      background: var(--card);
+      border: 1px solid var(--grid);
+      border-radius: 18px;
+      box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+    }
+    .hero {
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1.05;
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 1.35rem;
+    }
+    p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .stat {
+      background: var(--accent-soft);
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .stat strong {
+      display: block;
+      color: var(--accent);
+      font-size: 1.55rem;
+      line-height: 1.1;
+    }
+    .card {
+      margin-top: 24px;
+      padding: 22px;
+      overflow-x: auto;
+    }
+    svg {
+      width: 100%;
+      height: auto;
+      min-width: 880px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--grid);
+      text-align: left;
+      white-space: nowrap;
+    }
+    th {
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    td:nth-child(1), td:nth-child(5), td:nth-child(6) {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    .source {
+      margin-top: 16px;
+      font-size: 0.88rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <h1>World Country Population Totals</h1>
+      <p>Latest available World Bank population value for each country. The bar chart shows the top 30; the table includes all countries in the dataset.</p>
+      <div class="stats">
+        <div class="stat"><strong>217</strong><span>countries</span></div>
+        <div class="stat"><strong>8.12B</strong><span>combined population</span></div>
+        <div class="stat"><strong>2024-2024</strong><span>latest available years</span></div>
+      </div>
+      <p class="source">Source: World Bank indicator SP.POP.TOTL. Data snapshot: latest available data years 2024-2024.</p>
+    </section>
+
+    <section class="card">
+      <h2>Top 30 countries by population</h2>
+      <svg viewBox="0 0 1160 958" role="img" aria-label="Top 30 countries by population">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="270" y="18" text-anchor="end" fill="#64748b" font-size="12">Country</text>
+<text x="305" y="18" fill="#64748b" font-size="12">Population</text>
+<text x="24" y="51" fill="#94a3b8" font-size="12"> 1</text>
+<text x="270" y="51" text-anchor="end" fill="#172033" font-size="13">India</text>
+<rect x="305" y="39" width="710" height="18" rx="5" fill="#2563eb"/>
+<text x="1033" y="52" fill="#172033" font-size="13">1.45B</text>
+<text x="24" y="81" fill="#94a3b8" font-size="12"> 2</text>
+<text x="270" y="81" text-anchor="end" fill="#172033" font-size="13">China</text>
+<rect x="305" y="69" width="689" height="18" rx="5" fill="#2563eb"/>
+<text x="1033" y="82" fill="#172033" font-size="13">1.41B</text>
+<text x="24" y="111" fill="#94a3b8" font-size="12"> 3</text>
+<text x="270" y="111" text-anchor="end" fill="#172033" font-size="13">United States</text>
+<rect x="305" y="99" width="166" height="18" rx="5" fill="#2563eb"/>
+<text x="1033" y="112" fill="#172033" font-size="13">340.1M</text>
+<text x="24" y="141" fill="#94a3b8" font-size="12"> 4</text>
+<text x="270" y="141" text-anchor="end" fill="#172033" font-size="13">Indonesia</text>
+<rect x="305" y="129" width="139" height="18" rx="5" fill="#2563eb"/>
+<text x="1033" y="142" fill="#172033" font-size="13">283.5M</text>
+<text x="24" y="171" fill="#94a3b8" font-size="12"> 5</text>
+<text x="270" y="171" text-anchor="end" fill="#172033" font-size="13">Pakistan</text>
+<rect x="305" y="159" width="123" height="18" rx="5" fill="#2563eb"/>
+<text x="1033" y="172" fill="#172033" font-size="13">251.3M</text>
+<text x="24" y="201" fill="#94a3b8" font-size="12"> 6</text>
+<text x="270" y="201" text-anchor="end" fill="#172033" font-size="13">Nigeria</text>
+<rect x="305" y="189" width="114" height="18" rx="5" fill="#2563eb"/>
+<text x="1033" y="202" fill="#172033" font-size="13">232.7M</text>
+<text x="24" y="231" fill="#94a3b8" font-size="12"> 7</text>
+<text x="270" y="231" text-anchor="end" fill="#172033" font-size="13">Brazil</text>
+<rect x="305" y="219" width="104" height="18" rx="5" fill="#2563eb"/>
+<text x="1033" y="232" fill="#172033" font-size="13">212.0M</text>
+<text x="24" y="261" fill="#94a3b8" font-size="12"> 8</text>
+<text x="270" y="261" text-anchor="end" fill="#172033" font-size="13">Bangladesh</text>
+<rect x="305" y="249" width="85" height="18" rx="5" fill="#2563eb"/>
+<text x="1033" y="262" fill="#172033" font-size="13">173.6M</text>
+<text x="24" y="291" fill="#94a3b8" font-size="12"> 9</text>
+<text x="270" y="291" text-anchor="end" fill="#172033" font-size="13">Russian Federation</text>
+<rect x="305" y="279" width="70" height="18" rx="5" fill="#2563eb"/>
+<text x="1033" y="292" fill="#172033" font-size="13">143.5M</text>
+<text x="24" y="321" fill="#94a3b8" font-size="12">10</text>
+<text x="270" y="321" text-anchor="end" fill="#172033" font-size="13">Ethiopia</text>
+<rect x="305" y="309" width="65" height="18" rx="5" fill="#2563eb"/>
+<text x="1033" y="322" fill="#172033" font-size="13">132.1M</text>
+<text x="24" y="351" fill="#94a3b8" font-size="12">11</text>
+<text x="270" y="351" text-anchor="end" fill="#172033" font-size="13">Mexico</text>
+<rect x="305" y="339" width="64" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="352" fill="#172033" font-size="13">130.9M</text>
+<text x="24" y="381" fill="#94a3b8" font-size="12">12</text>
+<text x="270" y="381" text-anchor="end" fill="#172033" font-size="13">Japan</text>
+<rect x="305" y="369" width="61" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="382" fill="#172033" font-size="13">124.0M</text>
+<text x="24" y="411" fill="#94a3b8" font-size="12">13</text>
+<text x="270" y="411" text-anchor="end" fill="#172033" font-size="13">Egypt, Arab Rep.</text>
+<rect x="305" y="399" width="57" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="412" fill="#172033" font-size="13">116.5M</text>
+<text x="24" y="441" fill="#94a3b8" font-size="12">14</text>
+<text x="270" y="441" text-anchor="end" fill="#172033" font-size="13">Philippines</text>
+<rect x="305" y="429" width="57" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="442" fill="#172033" font-size="13">115.8M</text>
+<text x="24" y="471" fill="#94a3b8" font-size="12">15</text>
+<text x="270" y="471" text-anchor="end" fill="#172033" font-size="13">Congo, Dem. Rep.</text>
+<rect x="305" y="459" width="53" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="472" fill="#172033" font-size="13">109.3M</text>
+<text x="24" y="501" fill="#94a3b8" font-size="12">16</text>
+<text x="270" y="501" text-anchor="end" fill="#172033" font-size="13">Viet Nam</text>
+<rect x="305" y="489" width="49" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="502" fill="#172033" font-size="13">101.0M</text>
+<text x="24" y="531" fill="#94a3b8" font-size="12">17</text>
+<text x="270" y="531" text-anchor="end" fill="#172033" font-size="13">Iran, Islamic Rep.</text>
+<rect x="305" y="519" width="45" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="532" fill="#172033" font-size="13">91.6M</text>
+<text x="24" y="561" fill="#94a3b8" font-size="12">18</text>
+<text x="270" y="561" text-anchor="end" fill="#172033" font-size="13">Turkiye</text>
+<rect x="305" y="549" width="42" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="562" fill="#172033" font-size="13">85.5M</text>
+<text x="24" y="591" fill="#94a3b8" font-size="12">19</text>
+<text x="270" y="591" text-anchor="end" fill="#172033" font-size="13">Germany</text>
+<rect x="305" y="579" width="41" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="592" fill="#172033" font-size="13">83.5M</text>
+<text x="24" y="621" fill="#94a3b8" font-size="12">20</text>
+<text x="270" y="621" text-anchor="end" fill="#172033" font-size="13">Thailand</text>
+<rect x="305" y="609" width="35" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="622" fill="#172033" font-size="13">71.7M</text>
+<text x="24" y="651" fill="#94a3b8" font-size="12">21</text>
+<text x="270" y="651" text-anchor="end" fill="#172033" font-size="13">United Kingdom</text>
+<rect x="305" y="639" width="34" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="652" fill="#172033" font-size="13">69.2M</text>
+<text x="24" y="681" fill="#94a3b8" font-size="12">22</text>
+<text x="270" y="681" text-anchor="end" fill="#172033" font-size="13">Tanzania</text>
+<rect x="305" y="669" width="34" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="682" fill="#172033" font-size="13">68.6M</text>
+<text x="24" y="711" fill="#94a3b8" font-size="12">23</text>
+<text x="270" y="711" text-anchor="end" fill="#172033" font-size="13">France</text>
+<rect x="305" y="699" width="34" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="712" fill="#172033" font-size="13">68.6M</text>
+<text x="24" y="741" fill="#94a3b8" font-size="12">24</text>
+<text x="270" y="741" text-anchor="end" fill="#172033" font-size="13">South Africa</text>
+<rect x="305" y="729" width="31" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="742" fill="#172033" font-size="13">64.0M</text>
+<text x="24" y="771" fill="#94a3b8" font-size="12">25</text>
+<text x="270" y="771" text-anchor="end" fill="#172033" font-size="13">Italy</text>
+<rect x="305" y="759" width="29" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="772" fill="#172033" font-size="13">59.0M</text>
+<text x="24" y="801" fill="#94a3b8" font-size="12">26</text>
+<text x="270" y="801" text-anchor="end" fill="#172033" font-size="13">Kenya</text>
+<rect x="305" y="789" width="28" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="802" fill="#172033" font-size="13">56.4M</text>
+<text x="24" y="831" fill="#94a3b8" font-size="12">27</text>
+<text x="270" y="831" text-anchor="end" fill="#172033" font-size="13">Myanmar</text>
+<rect x="305" y="819" width="27" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="832" fill="#172033" font-size="13">54.5M</text>
+<text x="24" y="861" fill="#94a3b8" font-size="12">28</text>
+<text x="270" y="861" text-anchor="end" fill="#172033" font-size="13">Colombia</text>
+<rect x="305" y="849" width="26" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="862" fill="#172033" font-size="13">52.9M</text>
+<text x="24" y="891" fill="#94a3b8" font-size="12">29</text>
+<text x="270" y="891" text-anchor="end" fill="#172033" font-size="13">Korea, Rep.</text>
+<rect x="305" y="879" width="25" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="892" fill="#172033" font-size="13">51.8M</text>
+<text x="24" y="921" fill="#94a3b8" font-size="12">30</text>
+<text x="270" y="921" text-anchor="end" fill="#172033" font-size="13">Sudan</text>
+<rect x="305" y="909" width="25" height="18" rx="5" fill="#60a5fa"/>
+<text x="1033" y="922" fill="#172033" font-size="13">50.4M</text>
+</svg>
+    </section>
+
+    <section class="card">
+      <h2>All countries</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Country</th>
+            <th>ISO3</th>
+            <th>Region</th>
+            <th>Year</th>
+            <th>Population</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>India</td><td>IND</td><td>South Asia</td><td>2024</td><td>1,450,935,791</td></tr>
+          <tr><td>2</td><td>China</td><td>CHN</td><td>East Asia &amp; Pacific</td><td>2024</td><td>1,408,975,000</td></tr>
+          <tr><td>3</td><td>United States</td><td>USA</td><td>North America</td><td>2024</td><td>340,110,988</td></tr>
+          <tr><td>4</td><td>Indonesia</td><td>IDN</td><td>East Asia &amp; Pacific</td><td>2024</td><td>283,487,931</td></tr>
+          <tr><td>5</td><td>Pakistan</td><td>PAK</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>251,269,164</td></tr>
+          <tr><td>6</td><td>Nigeria</td><td>NGA</td><td>Sub-Saharan Africa </td><td>2024</td><td>232,679,478</td></tr>
+          <tr><td>7</td><td>Brazil</td><td>BRA</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>211,998,573</td></tr>
+          <tr><td>8</td><td>Bangladesh</td><td>BGD</td><td>South Asia</td><td>2024</td><td>173,562,364</td></tr>
+          <tr><td>9</td><td>Russian Federation</td><td>RUS</td><td>Europe &amp; Central Asia</td><td>2024</td><td>143,533,851</td></tr>
+          <tr><td>10</td><td>Ethiopia</td><td>ETH</td><td>Sub-Saharan Africa </td><td>2024</td><td>132,059,767</td></tr>
+          <tr><td>11</td><td>Mexico</td><td>MEX</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>130,861,007</td></tr>
+          <tr><td>12</td><td>Japan</td><td>JPN</td><td>East Asia &amp; Pacific</td><td>2024</td><td>123,975,371</td></tr>
+          <tr><td>13</td><td>Egypt, Arab Rep.</td><td>EGY</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>116,538,258</td></tr>
+          <tr><td>14</td><td>Philippines</td><td>PHL</td><td>East Asia &amp; Pacific</td><td>2024</td><td>115,843,670</td></tr>
+          <tr><td>15</td><td>Congo, Dem. Rep.</td><td>COD</td><td>Sub-Saharan Africa </td><td>2024</td><td>109,276,265</td></tr>
+          <tr><td>16</td><td>Viet Nam</td><td>VNM</td><td>East Asia &amp; Pacific</td><td>2024</td><td>100,987,686</td></tr>
+          <tr><td>17</td><td>Iran, Islamic Rep.</td><td>IRN</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>91,567,738</td></tr>
+          <tr><td>18</td><td>Turkiye</td><td>TUR</td><td>Europe &amp; Central Asia</td><td>2024</td><td>85,518,661</td></tr>
+          <tr><td>19</td><td>Germany</td><td>DEU</td><td>Europe &amp; Central Asia</td><td>2024</td><td>83,516,593</td></tr>
+          <tr><td>20</td><td>Thailand</td><td>THA</td><td>East Asia &amp; Pacific</td><td>2024</td><td>71,668,011</td></tr>
+          <tr><td>21</td><td>United Kingdom</td><td>GBR</td><td>Europe &amp; Central Asia</td><td>2024</td><td>69,226,000</td></tr>
+          <tr><td>22</td><td>Tanzania</td><td>TZA</td><td>Sub-Saharan Africa </td><td>2024</td><td>68,560,157</td></tr>
+          <tr><td>23</td><td>France</td><td>FRA</td><td>Europe &amp; Central Asia</td><td>2024</td><td>68,551,653</td></tr>
+          <tr><td>24</td><td>South Africa</td><td>ZAF</td><td>Sub-Saharan Africa </td><td>2024</td><td>64,007,187</td></tr>
+          <tr><td>25</td><td>Italy</td><td>ITA</td><td>Europe &amp; Central Asia</td><td>2024</td><td>58,952,704</td></tr>
+          <tr><td>26</td><td>Kenya</td><td>KEN</td><td>Sub-Saharan Africa </td><td>2024</td><td>56,432,944</td></tr>
+          <tr><td>27</td><td>Myanmar</td><td>MMR</td><td>East Asia &amp; Pacific</td><td>2024</td><td>54,500,091</td></tr>
+          <tr><td>28</td><td>Colombia</td><td>COL</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>52,886,363</td></tr>
+          <tr><td>29</td><td>Korea, Rep.</td><td>KOR</td><td>East Asia &amp; Pacific</td><td>2024</td><td>51,751,065</td></tr>
+          <tr><td>30</td><td>Sudan</td><td>SDN</td><td>Sub-Saharan Africa </td><td>2024</td><td>50,448,963</td></tr>
+          <tr><td>31</td><td>Uganda</td><td>UGA</td><td>Sub-Saharan Africa </td><td>2024</td><td>50,015,092</td></tr>
+          <tr><td>32</td><td>Spain</td><td>ESP</td><td>Europe &amp; Central Asia</td><td>2024</td><td>48,848,840</td></tr>
+          <tr><td>33</td><td>Algeria</td><td>DZA</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>46,814,308</td></tr>
+          <tr><td>34</td><td>Iraq</td><td>IRQ</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>46,042,015</td></tr>
+          <tr><td>35</td><td>Argentina</td><td>ARG</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>45,696,159</td></tr>
+          <tr><td>36</td><td>Afghanistan</td><td>AFG</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>42,647,492</td></tr>
+          <tr><td>37</td><td>Canada</td><td>CAN</td><td>North America</td><td>2024</td><td>41,288,599</td></tr>
+          <tr><td>38</td><td>Yemen, Rep.</td><td>YEM</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>40,583,164</td></tr>
+          <tr><td>39</td><td>Morocco</td><td>MAR</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>38,081,173</td></tr>
+          <tr><td>40</td><td>Angola</td><td>AGO</td><td>Sub-Saharan Africa </td><td>2024</td><td>37,885,849</td></tr>
+          <tr><td>41</td><td>Ukraine</td><td>UKR</td><td>Europe &amp; Central Asia</td><td>2024</td><td>37,860,221</td></tr>
+          <tr><td>42</td><td>Poland</td><td>POL</td><td>Europe &amp; Central Asia</td><td>2024</td><td>36,559,233</td></tr>
+          <tr><td>43</td><td>Uzbekistan</td><td>UZB</td><td>Europe &amp; Central Asia</td><td>2024</td><td>36,361,859</td></tr>
+          <tr><td>44</td><td>Malaysia</td><td>MYS</td><td>East Asia &amp; Pacific</td><td>2024</td><td>35,557,673</td></tr>
+          <tr><td>45</td><td>Saudi Arabia</td><td>SAU</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>35,300,280</td></tr>
+          <tr><td>46</td><td>Mozambique</td><td>MOZ</td><td>Sub-Saharan Africa </td><td>2024</td><td>34,631,766</td></tr>
+          <tr><td>47</td><td>Ghana</td><td>GHA</td><td>Sub-Saharan Africa </td><td>2024</td><td>34,427,414</td></tr>
+          <tr><td>48</td><td>Peru</td><td>PER</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>34,217,848</td></tr>
+          <tr><td>49</td><td>Madagascar</td><td>MDG</td><td>Sub-Saharan Africa </td><td>2024</td><td>31,964,956</td></tr>
+          <tr><td>50</td><td>Cote d&#x27;Ivoire</td><td>CIV</td><td>Sub-Saharan Africa </td><td>2024</td><td>31,934,230</td></tr>
+          <tr><td>51</td><td>Nepal</td><td>NPL</td><td>South Asia</td><td>2024</td><td>29,651,054</td></tr>
+          <tr><td>52</td><td>Cameroon</td><td>CMR</td><td>Sub-Saharan Africa </td><td>2024</td><td>29,123,744</td></tr>
+          <tr><td>53</td><td>Venezuela, RB</td><td>VEN</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>28,405,543</td></tr>
+          <tr><td>54</td><td>Australia</td><td>AUS</td><td>East Asia &amp; Pacific</td><td>2024</td><td>27,196,812</td></tr>
+          <tr><td>55</td><td>Niger</td><td>NER</td><td>Sub-Saharan Africa </td><td>2024</td><td>27,032,412</td></tr>
+          <tr><td>56</td><td>Korea, Dem. People&#x27;s Rep.</td><td>PRK</td><td>East Asia &amp; Pacific</td><td>2024</td><td>26,498,823</td></tr>
+          <tr><td>57</td><td>Syrian Arab Republic</td><td>SYR</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>24,672,760</td></tr>
+          <tr><td>58</td><td>Mali</td><td>MLI</td><td>Sub-Saharan Africa </td><td>2024</td><td>24,478,595</td></tr>
+          <tr><td>59</td><td>Burkina Faso</td><td>BFA</td><td>Sub-Saharan Africa </td><td>2024</td><td>23,548,781</td></tr>
+          <tr><td>60</td><td>Sri Lanka</td><td>LKA</td><td>South Asia</td><td>2024</td><td>21,916,000</td></tr>
+          <tr><td>61</td><td>Malawi</td><td>MWI</td><td>Sub-Saharan Africa </td><td>2024</td><td>21,655,286</td></tr>
+          <tr><td>62</td><td>Zambia</td><td>ZMB</td><td>Sub-Saharan Africa </td><td>2024</td><td>21,314,956</td></tr>
+          <tr><td>63</td><td>Kazakhstan</td><td>KAZ</td><td>Europe &amp; Central Asia</td><td>2024</td><td>20,592,571</td></tr>
+          <tr><td>64</td><td>Chad</td><td>TCD</td><td>Sub-Saharan Africa </td><td>2024</td><td>20,299,123</td></tr>
+          <tr><td>65</td><td>Chile</td><td>CHL</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>19,764,771</td></tr>
+          <tr><td>66</td><td>Romania</td><td>ROU</td><td>Europe &amp; Central Asia</td><td>2024</td><td>19,051,804</td></tr>
+          <tr><td>67</td><td>Somalia, Fed. Rep.</td><td>SOM</td><td>Sub-Saharan Africa </td><td>2024</td><td>19,009,151</td></tr>
+          <tr><td>68</td><td>Senegal</td><td>SEN</td><td>Sub-Saharan Africa </td><td>2024</td><td>18,501,984</td></tr>
+          <tr><td>69</td><td>Guatemala</td><td>GTM</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>18,406,359</td></tr>
+          <tr><td>70</td><td>Ecuador</td><td>ECU</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>18,135,478</td></tr>
+          <tr><td>71</td><td>Netherlands</td><td>NLD</td><td>Europe &amp; Central Asia</td><td>2024</td><td>17,993,485</td></tr>
+          <tr><td>72</td><td>Cambodia</td><td>KHM</td><td>East Asia &amp; Pacific</td><td>2024</td><td>17,638,801</td></tr>
+          <tr><td>73</td><td>Zimbabwe</td><td>ZWE</td><td>Sub-Saharan Africa </td><td>2024</td><td>16,634,373</td></tr>
+          <tr><td>74</td><td>Guinea</td><td>GIN</td><td>Sub-Saharan Africa </td><td>2024</td><td>14,754,785</td></tr>
+          <tr><td>75</td><td>Benin</td><td>BEN</td><td>Sub-Saharan Africa </td><td>2024</td><td>14,462,724</td></tr>
+          <tr><td>76</td><td>Rwanda</td><td>RWA</td><td>Sub-Saharan Africa </td><td>2024</td><td>14,256,567</td></tr>
+          <tr><td>77</td><td>Burundi</td><td>BDI</td><td>Sub-Saharan Africa </td><td>2024</td><td>14,047,786</td></tr>
+          <tr><td>78</td><td>Bolivia</td><td>BOL</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>12,413,315</td></tr>
+          <tr><td>79</td><td>Tunisia</td><td>TUN</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>12,277,109</td></tr>
+          <tr><td>80</td><td>South Sudan</td><td>SSD</td><td>Sub-Saharan Africa </td><td>2024</td><td>11,943,408</td></tr>
+          <tr><td>81</td><td>Belgium</td><td>BEL</td><td>Europe &amp; Central Asia</td><td>2024</td><td>11,858,610</td></tr>
+          <tr><td>82</td><td>Haiti</td><td>HTI</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>11,772,557</td></tr>
+          <tr><td>83</td><td>Jordan</td><td>JOR</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>11,552,876</td></tr>
+          <tr><td>84</td><td>Dominican Republic</td><td>DOM</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>11,427,557</td></tr>
+          <tr><td>85</td><td>United Arab Emirates</td><td>ARE</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>10,986,400</td></tr>
+          <tr><td>86</td><td>Cuba</td><td>CUB</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>10,979,783</td></tr>
+          <tr><td>87</td><td>Czechia</td><td>CZE</td><td>Europe &amp; Central Asia</td><td>2024</td><td>10,905,028</td></tr>
+          <tr><td>88</td><td>Honduras</td><td>HND</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>10,825,703</td></tr>
+          <tr><td>89</td><td>Portugal</td><td>PRT</td><td>Europe &amp; Central Asia</td><td>2024</td><td>10,694,681</td></tr>
+          <tr><td>90</td><td>Tajikistan</td><td>TJK</td><td>Europe &amp; Central Asia</td><td>2024</td><td>10,590,927</td></tr>
+          <tr><td>91</td><td>Papua New Guinea</td><td>PNG</td><td>East Asia &amp; Pacific</td><td>2024</td><td>10,576,502</td></tr>
+          <tr><td>92</td><td>Sweden</td><td>SWE</td><td>Europe &amp; Central Asia</td><td>2024</td><td>10,569,709</td></tr>
+          <tr><td>93</td><td>Greece</td><td>GRC</td><td>Europe &amp; Central Asia</td><td>2024</td><td>10,405,134</td></tr>
+          <tr><td>94</td><td>Azerbaijan</td><td>AZE</td><td>Europe &amp; Central Asia</td><td>2024</td><td>10,202,830</td></tr>
+          <tr><td>95</td><td>Israel</td><td>ISR</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>9,974,400</td></tr>
+          <tr><td>96</td><td>Hungary</td><td>HUN</td><td>Europe &amp; Central Asia</td><td>2024</td><td>9,562,065</td></tr>
+          <tr><td>97</td><td>Togo</td><td>TGO</td><td>Sub-Saharan Africa </td><td>2024</td><td>9,515,236</td></tr>
+          <tr><td>98</td><td>Austria</td><td>AUT</td><td>Europe &amp; Central Asia</td><td>2024</td><td>9,177,982</td></tr>
+          <tr><td>99</td><td>Belarus</td><td>BLR</td><td>Europe &amp; Central Asia</td><td>2024</td><td>9,132,629</td></tr>
+          <tr><td>100</td><td>Switzerland</td><td>CHE</td><td>Europe &amp; Central Asia</td><td>2024</td><td>9,005,582</td></tr>
+          <tr><td>101</td><td>Sierra Leone</td><td>SLE</td><td>Sub-Saharan Africa </td><td>2024</td><td>8,642,022</td></tr>
+          <tr><td>102</td><td>Lao PDR</td><td>LAO</td><td>East Asia &amp; Pacific</td><td>2024</td><td>7,769,819</td></tr>
+          <tr><td>103</td><td>Hong Kong SAR, China</td><td>HKG</td><td>East Asia &amp; Pacific</td><td>2024</td><td>7,524,100</td></tr>
+          <tr><td>104</td><td>Turkmenistan</td><td>TKM</td><td>Europe &amp; Central Asia</td><td>2024</td><td>7,494,498</td></tr>
+          <tr><td>105</td><td>Libya</td><td>LBY</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>7,381,023</td></tr>
+          <tr><td>106</td><td>Kyrgyz Republic</td><td>KGZ</td><td>Europe &amp; Central Asia</td><td>2024</td><td>7,221,868</td></tr>
+          <tr><td>107</td><td>Paraguay</td><td>PRY</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>6,929,153</td></tr>
+          <tr><td>108</td><td>Nicaragua</td><td>NIC</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>6,916,140</td></tr>
+          <tr><td>109</td><td>Serbia</td><td>SRB</td><td>Europe &amp; Central Asia</td><td>2024</td><td>6,586,476</td></tr>
+          <tr><td>110</td><td>Bulgaria</td><td>BGR</td><td>Europe &amp; Central Asia</td><td>2024</td><td>6,441,421</td></tr>
+          <tr><td>111</td><td>El Salvador</td><td>SLV</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>6,338,193</td></tr>
+          <tr><td>112</td><td>Congo, Rep.</td><td>COG</td><td>Sub-Saharan Africa </td><td>2024</td><td>6,332,961</td></tr>
+          <tr><td>113</td><td>Singapore</td><td>SGP</td><td>East Asia &amp; Pacific</td><td>2024</td><td>6,036,860</td></tr>
+          <tr><td>114</td><td>Denmark</td><td>DNK</td><td>Europe &amp; Central Asia</td><td>2024</td><td>5,976,992</td></tr>
+          <tr><td>115</td><td>Lebanon</td><td>LBN</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>5,805,962</td></tr>
+          <tr><td>116</td><td>Finland</td><td>FIN</td><td>Europe &amp; Central Asia</td><td>2024</td><td>5,619,911</td></tr>
+          <tr><td>117</td><td>Liberia</td><td>LBR</td><td>Sub-Saharan Africa </td><td>2024</td><td>5,612,817</td></tr>
+          <tr><td>118</td><td>Norway</td><td>NOR</td><td>Europe &amp; Central Asia</td><td>2024</td><td>5,572,279</td></tr>
+          <tr><td>119</td><td>Slovak Republic</td><td>SVK</td><td>Europe &amp; Central Asia</td><td>2024</td><td>5,422,069</td></tr>
+          <tr><td>120</td><td>Ireland</td><td>IRL</td><td>Europe &amp; Central Asia</td><td>2024</td><td>5,395,790</td></tr>
+          <tr><td>121</td><td>Central African Republic</td><td>CAF</td><td>Sub-Saharan Africa </td><td>2024</td><td>5,330,690</td></tr>
+          <tr><td>122</td><td>West Bank and Gaza</td><td>PSE</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>5,289,152</td></tr>
+          <tr><td>123</td><td>New Zealand</td><td>NZL</td><td>East Asia &amp; Pacific</td><td>2024</td><td>5,287,500</td></tr>
+          <tr><td>124</td><td>Oman</td><td>OMN</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>5,281,538</td></tr>
+          <tr><td>125</td><td>Mauritania</td><td>MRT</td><td>Sub-Saharan Africa </td><td>2024</td><td>5,169,395</td></tr>
+          <tr><td>126</td><td>Costa Rica</td><td>CRI</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>5,129,910</td></tr>
+          <tr><td>127</td><td>Kuwait</td><td>KWT</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>4,897,263</td></tr>
+          <tr><td>128</td><td>Panama</td><td>PAN</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>4,515,577</td></tr>
+          <tr><td>129</td><td>Croatia</td><td>HRV</td><td>Europe &amp; Central Asia</td><td>2024</td><td>3,866,200</td></tr>
+          <tr><td>130</td><td>Georgia</td><td>GEO</td><td>Europe &amp; Central Asia</td><td>2024</td><td>3,699,557</td></tr>
+          <tr><td>131</td><td>Eritrea</td><td>ERI</td><td>Sub-Saharan Africa </td><td>2024</td><td>3,535,603</td></tr>
+          <tr><td>132</td><td>Mongolia</td><td>MNG</td><td>East Asia &amp; Pacific</td><td>2024</td><td>3,524,788</td></tr>
+          <tr><td>133</td><td>Uruguay</td><td>URY</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>3,386,588</td></tr>
+          <tr><td>134</td><td>Puerto Rico (US)</td><td>PRI</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>3,203,295</td></tr>
+          <tr><td>135</td><td>Bosnia and Herzegovina</td><td>BIH</td><td>Europe &amp; Central Asia</td><td>2024</td><td>3,164,253</td></tr>
+          <tr><td>136</td><td>Armenia</td><td>ARM</td><td>Europe &amp; Central Asia</td><td>2024</td><td>3,033,500</td></tr>
+          <tr><td>137</td><td>Namibia</td><td>NAM</td><td>Sub-Saharan Africa </td><td>2024</td><td>3,030,131</td></tr>
+          <tr><td>138</td><td>Lithuania</td><td>LTU</td><td>Europe &amp; Central Asia</td><td>2024</td><td>2,888,278</td></tr>
+          <tr><td>139</td><td>Qatar</td><td>QAT</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>2,857,822</td></tr>
+          <tr><td>140</td><td>Jamaica</td><td>JAM</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>2,839,175</td></tr>
+          <tr><td>141</td><td>Gambia, The</td><td>GMB</td><td>Sub-Saharan Africa </td><td>2024</td><td>2,759,988</td></tr>
+          <tr><td>142</td><td>Gabon</td><td>GAB</td><td>Sub-Saharan Africa </td><td>2024</td><td>2,538,952</td></tr>
+          <tr><td>143</td><td>Botswana</td><td>BWA</td><td>Sub-Saharan Africa </td><td>2024</td><td>2,521,139</td></tr>
+          <tr><td>144</td><td>Moldova</td><td>MDA</td><td>Europe &amp; Central Asia</td><td>2024</td><td>2,402,306</td></tr>
+          <tr><td>145</td><td>Albania</td><td>ALB</td><td>Europe &amp; Central Asia</td><td>2024</td><td>2,377,128</td></tr>
+          <tr><td>146</td><td>Lesotho</td><td>LSO</td><td>Sub-Saharan Africa </td><td>2024</td><td>2,337,423</td></tr>
+          <tr><td>147</td><td>Guinea-Bissau</td><td>GNB</td><td>Sub-Saharan Africa </td><td>2024</td><td>2,201,352</td></tr>
+          <tr><td>148</td><td>Slovenia</td><td>SVN</td><td>Europe &amp; Central Asia</td><td>2024</td><td>2,127,400</td></tr>
+          <tr><td>149</td><td>Equatorial Guinea</td><td>GNQ</td><td>Sub-Saharan Africa </td><td>2024</td><td>1,892,516</td></tr>
+          <tr><td>150</td><td>Latvia</td><td>LVA</td><td>Europe &amp; Central Asia</td><td>2024</td><td>1,866,124</td></tr>
+          <tr><td>151</td><td>North Macedonia</td><td>MKD</td><td>Europe &amp; Central Asia</td><td>2024</td><td>1,824,359</td></tr>
+          <tr><td>152</td><td>Kosovo</td><td>XKX</td><td>Europe &amp; Central Asia</td><td>2024</td><td>1,594,353</td></tr>
+          <tr><td>153</td><td>Bahrain</td><td>BHR</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>1,588,670</td></tr>
+          <tr><td>154</td><td>Timor-Leste</td><td>TLS</td><td>East Asia &amp; Pacific</td><td>2024</td><td>1,400,638</td></tr>
+          <tr><td>155</td><td>Estonia</td><td>EST</td><td>Europe &amp; Central Asia</td><td>2024</td><td>1,372,341</td></tr>
+          <tr><td>156</td><td>Trinidad and Tobago</td><td>TTO</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>1,368,333</td></tr>
+          <tr><td>157</td><td>Cyprus</td><td>CYP</td><td>Europe &amp; Central Asia</td><td>2024</td><td>1,358,282</td></tr>
+          <tr><td>158</td><td>Mauritius</td><td>MUS</td><td>Sub-Saharan Africa </td><td>2024</td><td>1,245,779</td></tr>
+          <tr><td>159</td><td>Eswatini</td><td>SWZ</td><td>Sub-Saharan Africa </td><td>2024</td><td>1,242,822</td></tr>
+          <tr><td>160</td><td>Djibouti</td><td>DJI</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>1,168,722</td></tr>
+          <tr><td>161</td><td>Fiji</td><td>FJI</td><td>East Asia &amp; Pacific</td><td>2024</td><td>928,784</td></tr>
+          <tr><td>162</td><td>Comoros</td><td>COM</td><td>Sub-Saharan Africa </td><td>2024</td><td>866,628</td></tr>
+          <tr><td>163</td><td>Guyana</td><td>GUY</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>831,087</td></tr>
+          <tr><td>164</td><td>Solomon Islands</td><td>SLB</td><td>East Asia &amp; Pacific</td><td>2024</td><td>819,198</td></tr>
+          <tr><td>165</td><td>Bhutan</td><td>BTN</td><td>South Asia</td><td>2024</td><td>791,524</td></tr>
+          <tr><td>166</td><td>Macao SAR, China</td><td>MAC</td><td>East Asia &amp; Pacific</td><td>2024</td><td>687,000</td></tr>
+          <tr><td>167</td><td>Luxembourg</td><td>LUX</td><td>Europe &amp; Central Asia</td><td>2024</td><td>677,012</td></tr>
+          <tr><td>168</td><td>Suriname</td><td>SUR</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>634,431</td></tr>
+          <tr><td>169</td><td>Montenegro</td><td>MNE</td><td>Europe &amp; Central Asia</td><td>2024</td><td>623,525</td></tr>
+          <tr><td>170</td><td>Malta</td><td>MLT</td><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>2024</td><td>568,847</td></tr>
+          <tr><td>171</td><td>Maldives</td><td>MDV</td><td>South Asia</td><td>2024</td><td>527,799</td></tr>
+          <tr><td>172</td><td>Cabo Verde</td><td>CPV</td><td>Sub-Saharan Africa </td><td>2024</td><td>524,877</td></tr>
+          <tr><td>173</td><td>Brunei Darussalam</td><td>BRN</td><td>East Asia &amp; Pacific</td><td>2024</td><td>462,721</td></tr>
+          <tr><td>174</td><td>Belize</td><td>BLZ</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>417,072</td></tr>
+          <tr><td>175</td><td>Bahamas, The</td><td>BHS</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>401,283</td></tr>
+          <tr><td>176</td><td>Iceland</td><td>ISL</td><td>Europe &amp; Central Asia</td><td>2024</td><td>386,506</td></tr>
+          <tr><td>177</td><td>Vanuatu</td><td>VUT</td><td>East Asia &amp; Pacific</td><td>2024</td><td>327,777</td></tr>
+          <tr><td>178</td><td>New Caledonia</td><td>NCL</td><td>East Asia &amp; Pacific</td><td>2024</td><td>292,639</td></tr>
+          <tr><td>179</td><td>Barbados</td><td>BRB</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>282,467</td></tr>
+          <tr><td>180</td><td>French Polynesia</td><td>PYF</td><td>East Asia &amp; Pacific</td><td>2024</td><td>281,807</td></tr>
+          <tr><td>181</td><td>Sao Tome and Principe</td><td>STP</td><td>Sub-Saharan Africa </td><td>2024</td><td>235,536</td></tr>
+          <tr><td>182</td><td>Samoa</td><td>WSM</td><td>East Asia &amp; Pacific</td><td>2024</td><td>218,019</td></tr>
+          <tr><td>183</td><td>St. Lucia</td><td>LCA</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>179,744</td></tr>
+          <tr><td>184</td><td>Channel Islands</td><td>CHI</td><td>Europe &amp; Central Asia</td><td>2024</td><td>168,126</td></tr>
+          <tr><td>185</td><td>Guam</td><td>GUM</td><td>East Asia &amp; Pacific</td><td>2024</td><td>167,777</td></tr>
+          <tr><td>186</td><td>Curacao</td><td>CUW</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>155,967</td></tr>
+          <tr><td>187</td><td>Kiribati</td><td>KIR</td><td>East Asia &amp; Pacific</td><td>2024</td><td>134,518</td></tr>
+          <tr><td>188</td><td>Seychelles</td><td>SYC</td><td>Sub-Saharan Africa </td><td>2024</td><td>121,354</td></tr>
+          <tr><td>189</td><td>Grenada</td><td>GRD</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>117,207</td></tr>
+          <tr><td>190</td><td>Micronesia, Fed. Sts.</td><td>FSM</td><td>East Asia &amp; Pacific</td><td>2024</td><td>113,160</td></tr>
+          <tr><td>191</td><td>Aruba</td><td>ABW</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>107,995</td></tr>
+          <tr><td>192</td><td>Virgin Islands (U.S.)</td><td>VIR</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>104,377</td></tr>
+          <tr><td>193</td><td>Tonga</td><td>TON</td><td>East Asia &amp; Pacific</td><td>2024</td><td>104,175</td></tr>
+          <tr><td>194</td><td>St. Vincent and the Grenadines</td><td>VCT</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>100,616</td></tr>
+          <tr><td>195</td><td>Antigua and Barbuda</td><td>ATG</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>93,772</td></tr>
+          <tr><td>196</td><td>Isle of Man</td><td>IMN</td><td>Europe &amp; Central Asia</td><td>2024</td><td>84,160</td></tr>
+          <tr><td>197</td><td>Andorra</td><td>AND</td><td>Europe &amp; Central Asia</td><td>2024</td><td>81,938</td></tr>
+          <tr><td>198</td><td>Cayman Islands</td><td>CYM</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>74,457</td></tr>
+          <tr><td>199</td><td>Dominica</td><td>DMA</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>66,205</td></tr>
+          <tr><td>200</td><td>Bermuda</td><td>BMU</td><td>North America</td><td>2024</td><td>64,636</td></tr>
+          <tr><td>201</td><td>Greenland</td><td>GRL</td><td>Europe &amp; Central Asia</td><td>2024</td><td>56,836</td></tr>
+          <tr><td>202</td><td>Faroe Islands</td><td>FRO</td><td>Europe &amp; Central Asia</td><td>2024</td><td>54,681</td></tr>
+          <tr><td>203</td><td>St. Kitts and Nevis</td><td>KNA</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>46,843</td></tr>
+          <tr><td>204</td><td>American Samoa</td><td>ASM</td><td>East Asia &amp; Pacific</td><td>2024</td><td>46,765</td></tr>
+          <tr><td>205</td><td>Turks and Caicos Islands</td><td>TCA</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>46,535</td></tr>
+          <tr><td>206</td><td>Northern Mariana Islands</td><td>MNP</td><td>East Asia &amp; Pacific</td><td>2024</td><td>44,278</td></tr>
+          <tr><td>207</td><td>Sint Maarten (Dutch part)</td><td>SXM</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>43,350</td></tr>
+          <tr><td>208</td><td>Liechtenstein</td><td>LIE</td><td>Europe &amp; Central Asia</td><td>2024</td><td>40,450</td></tr>
+          <tr><td>209</td><td>British Virgin Islands</td><td>VGB</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>39,471</td></tr>
+          <tr><td>210</td><td>Gibraltar</td><td>GIB</td><td>Europe &amp; Central Asia</td><td>2024</td><td>39,329</td></tr>
+          <tr><td>211</td><td>Monaco</td><td>MCO</td><td>Europe &amp; Central Asia</td><td>2024</td><td>38,631</td></tr>
+          <tr><td>212</td><td>Marshall Islands</td><td>MHL</td><td>East Asia &amp; Pacific</td><td>2024</td><td>37,548</td></tr>
+          <tr><td>213</td><td>San Marino</td><td>SMR</td><td>Europe &amp; Central Asia</td><td>2024</td><td>33,977</td></tr>
+          <tr><td>214</td><td>St. Martin (French part)</td><td>MAF</td><td>Latin America &amp; Caribbean </td><td>2024</td><td>26,129</td></tr>
+          <tr><td>215</td><td>Palau</td><td>PLW</td><td>East Asia &amp; Pacific</td><td>2024</td><td>17,695</td></tr>
+          <tr><td>216</td><td>Nauru</td><td>NRU</td><td>East Asia &amp; Pacific</td><td>2024</td><td>11,947</td></tr>
+          <tr><td>217</td><td>Tuvalu</td><td>TUV</td><td>East Asia &amp; Pacific</td><td>2024</td><td>9,646</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
