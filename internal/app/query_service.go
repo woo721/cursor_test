@@ -61,8 +61,12 @@ func NewQueryService(
 	if repositories[historical] == nil || repositories[domain.SourceStarRocks] == nil {
 		return nil, domain.ErrInvalidArgument
 	}
+	ownedRepositories := make(map[domain.Source]domain.Repository, len(repositories))
+	for source, repo := range repositories {
+		ownedRepositories[source] = repo
+	}
 	return &QueryService{
-		repositories: repositories,
+		repositories: ownedRepositories,
 		historical:   historical,
 		realtimeDays: realtimeDays,
 		timezone:     timezone,

@@ -124,7 +124,7 @@ func buildWith(cfg config.Config, b builders) (*Application, error) {
 	}
 
 	ready := readiness{repositories: uniqueRepositories(repos)}
-	handler := httpapi.New(httpapi.Dependencies{
+	handler, err := httpapi.New(httpapi.Dependencies{
 		Queries:        service,
 		Ready:          ready,
 		APIKey:         cfg.APIKey,
@@ -134,6 +134,9 @@ func buildWith(cfg config.Config, b builders) (*Application, error) {
 		Logger:         b.logger,
 		MetricsHandler: metrics.Handler(reg),
 	})
+	if err != nil {
+		return cleanup(err)
+	}
 	application.Handler = metrics.HTTPMiddleware(handler)
 	return application, nil
 }

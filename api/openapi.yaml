@@ -223,7 +223,11 @@ components:
         - end_date
       properties:
         source:
-          $ref: "#/components/schemas/Source"
+          type: string
+          enum:
+            - hive
+            - trino
+            - starrocks
         start_date:
           type: string
           format: date

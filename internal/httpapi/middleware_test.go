@@ -30,7 +30,7 @@ func TestPanicRecovery(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	srv := httptest.NewServer(httpapi.New(httpapi.Dependencies{
+	h, err := httpapi.New(httpapi.Dependencies{
 		Queries:      panicQueries{},
 		Ready:        fakeReady{},
 		APIKey:       testAPIKey,
@@ -38,7 +38,11 @@ func TestPanicRecovery(t *testing.T) {
 		MaxQueryDays: 366,
 		Timezone:     loc,
 		Logger:       slog.New(slog.NewTextHandler(io.Discard, nil)),
-	}))
+	})
+	if err != nil {
+		t.Fatalf("New: %v", err)
+	}
+	srv := httptest.NewServer(h)
 	defer srv.Close()
 
 	resp := authorizedGet(t, srv, "/api/v1/retail/summary?start_date=2026-08-01&end_date=2026-08-06&source=auto&org_id=ORG-001")

@@ -62,7 +62,7 @@ func testServer(t *testing.T, q *fakeQueries, ready httpapi.Readiness) *httptest
 	if err != nil {
 		t.Fatal(err)
 	}
-	h := httpapi.New(httpapi.Dependencies{
+	h, err := httpapi.New(httpapi.Dependencies{
 		Queries:      q,
 		Ready:        ready,
 		APIKey:       testAPIKey,
@@ -71,6 +71,9 @@ func testServer(t *testing.T, q *fakeQueries, ready httpapi.Readiness) *httptest
 		Timezone:     loc,
 		Logger:       slog.New(slog.NewTextHandler(io.Discard, nil)),
 	})
+	if err != nil {
+		t.Fatalf("New: %v", err)
+	}
 	return httptest.NewServer(h)
 }
 
@@ -149,6 +152,21 @@ func TestWrongAPIKeyUnauthorized(t *testing.T) {
 	code, _, _ := decodeError(t, resp)
 	if code != "UNAUTHORIZED" {
 		t.Fatalf("code=%q", code)
+	}
+}
+
+func TestNewRejectsEmptyAPIKey(t *testing.T) {
+	h, err := httpapi.New(httpapi.Dependencies{
+		Queries: &fakeQueries{},
+		Ready:   fakeReady{},
+		APIKey:  "",
+		Logger:  slog.New(slog.NewTextHandler(io.Discard, nil)),
+	})
+	if err == nil {
+		t.Fatal("expected empty API key to be rejected")
+	}
+	if h != nil {
+		t.Fatal("empty API key must not produce a serving handler")
 	}
 }
 

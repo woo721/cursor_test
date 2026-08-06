@@ -222,6 +222,54 @@ func TestPlanExplicitTrinoUsesFullRange(t *testing.T) {
 	}
 }
 
+func TestNewQueryServiceCopiesRepositoryMap(t *testing.T) {
+	loc := mustLoc(t)
+	now := time.Date(2026, 8, 6, 15, 0, 0, 0, loc)
+	hive := &fakeRepository{}
+	originalStarRocks := &fakeRepository{
+		retail: domain.RetailSummary{
+			OrderCount:  5,
+			SalesAmount: decimal.RequireFromString("12.50"),
+		},
+		called: make(chan domain.Query, 1),
+	}
+	hijackedStarRocks := &fakeRepository{
+		retail: domain.RetailSummary{
+			OrderCount:  99,
+			SalesAmount: decimal.RequireFromString("99.99"),
+		},
+		called: make(chan domain.Query, 1),
+	}
+	repos := map[domain.Source]domain.Repository{
+		domain.SourceHive:      hive,
+		domain.SourceStarRocks: originalStarRocks,
+	}
+	svc := newTestService(t, repos, domain.SourceHive, 3, loc, now)
+
+	repos[domain.SourceStarRocks] = hijackedStarRocks
+
+	got, err := svc.RetailSummary(context.Background(), domain.SourceStarRocks, domain.Query{
+		Range: mustRange(t, "2026-08-04", "2026-08-06", loc),
+		OrgID: "ORG-001",
+	})
+	if err != nil {
+		t.Fatalf("RetailSummary: %v", err)
+	}
+	if got.Data.OrderCount != 5 || !got.Data.SalesAmount.Equal(decimal.RequireFromString("12.50")) {
+		t.Fatalf("service used mutated repository map: %#v", got.Data)
+	}
+	select {
+	case <-originalStarRocks.called:
+	default:
+		t.Fatal("original StarRocks repository was not called")
+	}
+	select {
+	case <-hijackedStarRocks.called:
+		t.Fatal("mutated StarRocks repository was called")
+	default:
+	}
+}
+
 func TestRetailSummaryCancelsPeerOnSegmentFailure(t *testing.T) {
 	loc := mustLoc(t)
 	now := time.Date(2026, 8, 6, 15, 0, 0, 0, loc)

@@ -2,6 +2,7 @@ package httpapi
 
 import (
 	"context"
+	"errors"
 	"log/slog"
 	"net/http"
 	"time"
@@ -85,7 +86,11 @@ type renovationResponse struct {
 }
 
 // New 组装路由与中间件：recovery(requestID(accessLog(timeout(apiKey(routes)))))。
-func New(deps Dependencies) http.Handler {
+func New(deps Dependencies) (http.Handler, error) {
+	if deps.APIKey == "" {
+		return nil, errors.New("APIKey: required")
+	}
+
 	logger := deps.Logger
 	if logger == nil {
 		logger = slog.Default()
@@ -136,7 +141,7 @@ func New(deps Dependencies) http.Handler {
 				),
 			),
 		),
-	)
+	), nil
 }
 
 func (a *api) parseQuery(r *http.Request) (parsedQuery, error) {
