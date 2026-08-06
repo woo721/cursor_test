@@ -4,4 +4,8 @@ go 1.26.0
 
 toolchain go1.26.5
 
-require github.com/shopspring/decimal v1.4.0 // indirect
+require (
+	github.com/google/go-cmp v0.7.0
+	github.com/shopspring/decimal v1.4.0
+	golang.org/x/sync v0.22.0
+)
