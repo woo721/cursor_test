@@ -1,0 +1,348 @@
+openapi: 3.0.3
+info:
+  title: Home Improvement Query API
+  version: 1.0.0
+  description: |
+    Query API for retail order summaries and renovation funnel metrics.
+    Business endpoints require X-API-Key. Health and metrics endpoints are public.
+servers:
+  - url: http://localhost:8080
+security:
+  - ApiKeyAuth: []
+paths:
+  /api/v1/retail/summary:
+    get:
+      summary: Query retail order summary
+      operationId: getRetailSummary
+      tags:
+        - business
+      parameters:
+        - $ref: "#/components/parameters/Source"
+        - $ref: "#/components/parameters/OrgID"
+        - $ref: "#/components/parameters/StartDate"
+        - $ref: "#/components/parameters/EndDate"
+      responses:
+        "200":
+          description: Retail summary for the requested organization and date range.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RetailResponse"
+        "400":
+          $ref: "#/components/responses/InvalidArgument"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "503":
+          $ref: "#/components/responses/DependencyUnavailable"
+        "504":
+          $ref: "#/components/responses/QueryTimeout"
+        "500":
+          $ref: "#/components/responses/InternalError"
+  /api/v1/renovation/funnel:
+    get:
+      summary: Query renovation funnel metrics
+      operationId: getRenovationFunnel
+      tags:
+        - business
+      parameters:
+        - $ref: "#/components/parameters/Source"
+        - $ref: "#/components/parameters/OrgID"
+        - $ref: "#/components/parameters/StartDate"
+        - $ref: "#/components/parameters/EndDate"
+      responses:
+        "200":
+          description: Renovation funnel metrics for the requested organization and date range.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RenovationResponse"
+        "400":
+          $ref: "#/components/responses/InvalidArgument"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "503":
+          $ref: "#/components/responses/DependencyUnavailable"
+        "504":
+          $ref: "#/components/responses/QueryTimeout"
+        "500":
+          $ref: "#/components/responses/InternalError"
+  /health/live:
+    get:
+      summary: Liveness probe
+      operationId: getHealthLive
+      tags:
+        - operations
+      security: []
+      responses:
+        "200":
+          description: Process is alive.
+  /health/ready:
+    get:
+      summary: Readiness probe
+      operationId: getHealthReady
+      tags:
+        - operations
+      security: []
+      responses:
+        "200":
+          description: Dependencies are ready.
+        "503":
+          $ref: "#/components/responses/DependencyUnavailable"
+  /metrics:
+    get:
+      summary: Prometheus metrics
+      operationId: getMetrics
+      tags:
+        - operations
+      security: []
+      responses:
+        "200":
+          description: Prometheus metrics exposition.
+          content:
+            text/plain:
+              schema:
+                type: string
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+  parameters:
+    Source:
+      name: source
+      in: query
+      required: true
+      description: Source routing mode. auto splits historical and real-time ranges; explicit values query one source.
+      schema:
+        $ref: "#/components/schemas/Source"
+    OrgID:
+      name: org_id
+      in: query
+      required: true
+      description: Organization identifier.
+      schema:
+        type: string
+        minLength: 1
+        maxLength: 64
+        pattern: "^[A-Za-z0-9_-]{1,64}$"
+      example: ORG-001
+    StartDate:
+      name: start_date
+      in: query
+      required: true
+      description: Inclusive start date in the service timezone.
+      schema:
+        type: string
+        format: date
+      example: "2026-08-01"
+    EndDate:
+      name: end_date
+      in: query
+      required: true
+      description: Inclusive end date in the service timezone.
+      schema:
+        type: string
+        format: date
+      example: "2026-08-06"
+  responses:
+    InvalidArgument:
+      description: Query parameter validation failed.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+          example:
+            error:
+              code: INVALID_ARGUMENT
+              message: invalid argument
+              request_id: 0123456789abcdef0123456789abcdef
+    Unauthorized:
+      description: X-API-Key is missing or invalid.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+          example:
+            error:
+              code: UNAUTHORIZED
+              message: unauthorized
+              request_id: 0123456789abcdef0123456789abcdef
+    DependencyUnavailable:
+      description: A backend dependency is unavailable.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+          example:
+            error:
+              code: DEPENDENCY_UNAVAILABLE
+              message: dependency unavailable
+              request_id: 0123456789abcdef0123456789abcdef
+    QueryTimeout:
+      description: Query execution exceeded the configured timeout.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+          example:
+            error:
+              code: QUERY_TIMEOUT
+              message: query timed out
+              request_id: 0123456789abcdef0123456789abcdef
+    InternalError:
+      description: Unexpected server error.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+          example:
+            error:
+              code: INTERNAL_ERROR
+              message: internal error
+              request_id: 0123456789abcdef0123456789abcdef
+  schemas:
+    Source:
+      type: string
+      enum:
+        - auto
+        - hive
+        - trino
+        - starrocks
+    Money:
+      type: string
+      description: Decimal money value formatted with exactly two fractional digits.
+      pattern: "^\\d+\\.\\d{2}$"
+      example: "3568200.50"
+    Segment:
+      type: object
+      additionalProperties: false
+      required:
+        - source
+        - start_date
+        - end_date
+      properties:
+        source:
+          $ref: "#/components/schemas/Source"
+        start_date:
+          type: string
+          format: date
+        end_date:
+          type: string
+          format: date
+    Meta:
+      type: object
+      additionalProperties: false
+      required:
+        - request_id
+        - requested_source
+        - segments
+      properties:
+        request_id:
+          type: string
+          pattern: "^[a-f0-9]{32}$"
+        requested_source:
+          $ref: "#/components/schemas/Source"
+        segments:
+          type: array
+          items:
+            $ref: "#/components/schemas/Segment"
+    RetailData:
+      type: object
+      additionalProperties: false
+      required:
+        - order_count
+        - sales_amount
+      properties:
+        order_count:
+          type: integer
+          format: int64
+          minimum: 0
+        sales_amount:
+          $ref: "#/components/schemas/Money"
+    RetailResponse:
+      type: object
+      additionalProperties: false
+      required:
+        - data
+        - meta
+      properties:
+        data:
+          $ref: "#/components/schemas/RetailData"
+        meta:
+          $ref: "#/components/schemas/Meta"
+    RenovationData:
+      type: object
+      additionalProperties: false
+      required:
+        - lead_count
+        - invited_count
+        - measured_count
+        - signed_count
+        - started_count
+        - completed_count
+      properties:
+        lead_count:
+          type: integer
+          format: int64
+          minimum: 0
+        invited_count:
+          type: integer
+          format: int64
+          minimum: 0
+        measured_count:
+          type: integer
+          format: int64
+          minimum: 0
+        signed_count:
+          type: integer
+          format: int64
+          minimum: 0
+        started_count:
+          type: integer
+          format: int64
+          minimum: 0
+        completed_count:
+          type: integer
+          format: int64
+          minimum: 0
+    RenovationResponse:
+      type: object
+      additionalProperties: false
+      required:
+        - data
+        - meta
+      properties:
+        data:
+          $ref: "#/components/schemas/RenovationData"
+        meta:
+          $ref: "#/components/schemas/Meta"
+    Error:
+      type: object
+      additionalProperties: false
+      required:
+        - code
+        - message
+        - request_id
+      properties:
+        code:
+          type: string
+          enum:
+            - INVALID_ARGUMENT
+            - UNAUTHORIZED
+            - DEPENDENCY_UNAVAILABLE
+            - QUERY_TIMEOUT
+            - INTERNAL_ERROR
+        message:
+          type: string
+        request_id:
+          type: string
+          pattern: "^[a-f0-9]{32}$"
+    ErrorResponse:
+      type: object
+      additionalProperties: false
+      required:
+        - error
+      properties:
+        error:
+          $ref: "#/components/schemas/Error"
