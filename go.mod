@@ -9,3 +9,5 @@ require (
 	github.com/shopspring/decimal v1.4.0
 	golang.org/x/sync v0.22.0
 )
+
+require github.com/DATA-DOG/go-sqlmock v1.5.2
